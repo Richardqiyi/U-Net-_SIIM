@@ -33,19 +33,16 @@ pip install -r requirements.txt
         |-- SIIM-ACR-Pneumothorax-Seg-XR_test (this is for segmentation)
             |-- images
                 |-- <your image>
-
 ```
 #### Training
 
 ```
 python train.py --dataset SIIM-ACR-Pneumothorax-Seg-XR --arch NestedUNet --img_ext .png --mask_ext .png
-
 ```
 
 #### inference
 
 ```
 python inference.py --name SIIM-ACR-Pneumothorax-Seg-XR_NestedUNet_woDS
-
 ```
 The results will be in the `outputs` .
