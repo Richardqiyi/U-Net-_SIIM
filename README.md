@@ -45,4 +45,5 @@ python train.py --dataset SIIM-ACR-Pneumothorax-Seg-XR --arch NestedUNet --img_e
 ```
 python inference.py --name SIIM-ACR-Pneumothorax-Seg-XR_NestedUNet_woDS
 ```
-The results will be in the `outputs` .
+The results will be in the `outputs` . 
+You may nned to resize the the ouputs to size corresponding with the test images. See `inference.py`.
