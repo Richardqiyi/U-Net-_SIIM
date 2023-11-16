@@ -106,8 +106,10 @@ def main():
 
             for i in range(len(output)):
                 for c in range(config['num_classes']):
-                    cv2.imwrite(os.path.join('outputs', config['name'], str(c), meta['img_id'][i] + '.jpg'),
-                                (output[i, c] * 255).astype('uint8'))
+                    original_output = (output[i, c] * 255).astype('uint8')
+                    resized_output = cv2.resize(original_output, (1024, 1024), interpolation=cv2.INTER_NEAREST)
+                    save_path = os.path.join('outputs', config['name'], str(c), meta['img_id'][i] + '.png')
+                    cv2.imwrite(save_path, resized_output)
 
     print('IoU: %.4f' % avg_meter.avg)
 
