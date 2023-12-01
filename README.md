@@ -15,7 +15,7 @@ python = 3.7, PyTorch = 1.7.1, cuda = 10.1
 
 #### Docker
 ```
-stevezeyuzhang/colab:1.7.1
+docker pull stevezeyuzhang/colab:1.7.1
 ```
 
 #### Installation
