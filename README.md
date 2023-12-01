@@ -9,9 +9,14 @@ SIIM-ACR-Pneumothorax-Seg-XR dataset.
 
 python = 3.7, PyTorch = 1.7.1, cuda = 10.1
 
-#### Docker
+#### GPU
 
+1*Nvidia RTX 3090 24GB
+
+#### Docker
+```
 stevezeyuzhang/colab:1.7.1
+```
 
 #### Installation
 
@@ -21,7 +26,6 @@ pip install -r requirements.txt
 
 #### File Directory
 ```
-.
 |-- U-Net-_SIIM
     |-- inputs
         |-- SIIM-ACR-Pneumothorax-Seg-XR
