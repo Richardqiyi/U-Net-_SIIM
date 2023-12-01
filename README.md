@@ -45,6 +45,7 @@ python train.py --dataset SIIM-ACR-Pneumothorax-Seg-XR --arch NestedUNet --img_e
 ```
 
 #### inference
+The checkpoint is saved in `models`
 
 ```
 python inference.py --name SIIM-ACR-Pneumothorax-Seg-XR_NestedUNet_woDS
